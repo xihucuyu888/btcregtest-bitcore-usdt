@@ -27,7 +27,7 @@ RUN wget -L https://github.com/OmniLayer/omnicore/releases/download/v0.3.1/omnic
 
 RUN mkdir -p /opt/btc/data/regtest-omni
 ADD btc.conf /opt/btc/
-ADD bitcoin-0.15.2 /root/bitcoin-0.15.2
+ADD bitcoin-22.0 /root/bitcoin-0.15.2
 ADD bitcore.config.json /opt/btc/bitcore
 COPY *.sh /opt/btc/
 ADD usdt.conf /opt/btc
